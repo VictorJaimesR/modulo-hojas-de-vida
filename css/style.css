@@ -1,0 +1,316 @@
+/* ====== Estilos globales ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.5;
+  /* transition:all 0.5s; */
+}
+
+/* ====== Navegación ====== */
+nav {
+  background-color: #004080;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background .5s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: #0059b3;
+}
+
+
+header h1 {
+  text-align: center;
+  padding: 30px 10px 10px;
+  font-size: 3rem;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* ====== Búsqueda ====== */
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.principal .logounimag{
+    display: flex;
+    align-items: center;
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin-right: 20px;
+ }    
+
+ .principal .materia{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 40px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 50px;
+ }
+
+ .principal .imagenes{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;   
+ }
+
+ .principal .fotito {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin-right: 20px;
+ }
+
+ 
+
+ .principal .fotito img{
+    border-radius: 100px;
+ }
+
+ .principal .rueda {
+    display: flex;
+    align-items: center;
+ }
+
+
+.busqueda input[type="search"] {
+  padding: 10px 15px;
+  border: 2px solid #004080;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 1rem;
+
+}
+
+.busqueda .parrafo {
+  font-size: 0.95rem;
+  color: #0034a3;
+}
+
+/* ====== Contenedor de tarjetas ====== */
+.tarjetas {
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 10px;
+}
+
+/* ====== Tarjeta individual ====== */
+.tarjeta {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.foto {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* ====== Texto dentro de las tarjetas ====== */
+.tarjeta h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #004080;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* ====== Botón ====== */
+.boton {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #0059b3;
+}
+
+/* ====== Redes sociales ====== */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.redes img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s;
+}
+
+.redes img:hover {
+  transform: scale(1.1);
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #a9d4ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/*  header{
+    text-align: center;
+}
+nav{
+    background-color: blue;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 6px;
+} 
+
+.parrafo{
+    color: blue;
+    display: inline;
+}
+
+.foto{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+.tarjetas{
+    max-width: 700px; 
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.boton a{
+    
+    color: white;
+    
+    text-decoration: none;
+       
+    
+}
+button{
+    
+    background-color: blue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    
+}
+.tarjeta{
+    border: 2px solid rgb(70, 70, 70);
+    margin: 10px;
+    width: 200px; 
+}
+
+img{
+    width: 25px;
+    height: 25px;
+}
+
+footer{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     text-align: left;
+    margin-left: 342px; 
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    margin: 0px;
+} */
